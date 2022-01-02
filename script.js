@@ -1,3 +1,24 @@
+const form = document.getElementById('form')
+const input = document.getElementById('input')
+const todos = document.getElementById('todos')
+
+form.addEventListener('submit' , (e) => {
+    e.preventDefault();
+
+    const todoText = input.value;
+
+    if (todoText) {
+        const todoEl = document.createElement
+        ('li');
+        todoEl.innerText = todoText;
+        todos.appendChild(todoEl)
+
+        input.value = "";
+    }
+})
+
+
+//This is the beginning of the animation code
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -55,16 +76,5 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
-  const form = document.getElementById('form')
-  const input = document.getElementById('form')
-
-  form.addEventListener('submit' , (e) => {
-      e.preventDefault();
-
-      const todo = input.value;
-
-      if(todo) {
-          
-      }
-  })
+// 4:22 Adding Toggle for completed.
   
