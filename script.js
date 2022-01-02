@@ -11,6 +11,18 @@ form.addEventListener('submit' , (e) => {
         const todoEl = document.createElement
         ('li');
         todoEl.innerText = todoText;
+
+        todoEl.addEventListener('click', ()  => {
+            todoEl.classList.toggle("completed");
+        });
+
+        todoEl.addEventListener("contextmenu", (e) => {
+            e.preventDefault()
+                
+                todoEl.remove();
+            
+        })
+
         todos.appendChild(todoEl)
 
         input.value = "";
