@@ -54,3 +54,17 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+  const form = document.getElementById('form')
+  const input = document.getElementById('form')
+
+  form.addEventListener('submit' , (e) => {
+      e.preventDefault();
+
+      const todo = input.value;
+
+      if(todo) {
+          
+      }
+  })
+  

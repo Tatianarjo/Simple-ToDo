@@ -16,9 +16,45 @@ body {
 h1 {
     font-family: "Sniglet", sans-serif;
     color: purple;
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
+    /* opacity: 0.4; */
  
+}
+
+form {
+    width: 400px;
+    max-width: 100%;
+    margin:auto;
+
+}
+
+.input {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    font-family: "Oooh Baby", sans-serif;
+    width: 100%;
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.input::placeholder {
+    color: #b5b5b5;
+    font-family: "Sniglet", sans-serif;
+
+}
+
+.todos {
+   background-color: white;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.todos li {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
 }
 
 
